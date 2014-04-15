@@ -143,7 +143,7 @@
     $        = require "jquery"
     _        = require "underscore"
     Backbone = require "backbone"
-    ${1:template} = require "./templates/${2:template_path.html}"
+    ${1:template} = require "./templates/${2:template_path}"
 
     module.exports = view${3: # delete this and press tab}
 
@@ -383,11 +383,12 @@
   "JavaScript: Backbone View for CommonJS":
     "prefix": "expview"
     "body": """
-    var $        = require "jquery"
-    var _        = require "underscore"
-    var Backbone = require "backbone"
+    var $        = require("jquery");
+    var _        = require("underscore");
+    var Backbone = require("backbone");
+    var ${1:template} = require("./template/${2:template_path}")
 
-    module.exports = view${1: // delete this and press tab}
+    module.exports = view${3: // delete this and press tab}
 
     """
 
@@ -408,8 +409,8 @@
   "JavaScript: Backbone Model for CommonJS":
     "prefix": "expmodel"
     "body": """
-    var _        = require "underscore"
-    var Backbone = require "backbone"
+    var _        = require("underscore");
+    var Backbone = require("backbone");
 
     module.exports = model${1: // delete this and press tab}
 
@@ -432,8 +433,8 @@
   "JavaScript: Backbone Model for CommonJS":
     "prefix": "expcollection"
     "body": """
-    var _        = require "underscore"
-    var Backbone = require "backbone"
+    var _        = require("underscore");
+    var Backbone = require("backbone");
 
     module.exports = collection${1: // delete this and press tab}
 
@@ -457,9 +458,9 @@
   "JavaScript: Backbone Router for CommonJS":
     "prefix": "exprouter"
     "body": """
-    var $        = require "jquery"
-    var _        = require "underscore"
-    var Backbone = require "backbone"
+    var $        = require("jquery");
+    var _        = require("underscore");
+    var Backbone = require("backbone");
 
     module.exports = router${1: // delete this and press tab}
 
