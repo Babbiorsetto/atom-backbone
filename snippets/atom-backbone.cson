@@ -145,7 +145,7 @@
     Backbone = require "backbone"
     ${1:template} = require "./templates/${2:template_path.html}"
 
-    module.exports = view{3: # delete this and press tab}
+    module.exports = view${3: # delete this and press tab}
 
     """
 
@@ -158,7 +158,7 @@
       ${1:'dep'}
     ], (_, Backbone${2:, dep}) ->
 
-      model{3: # delete this and press tab}
+      model${3: # delete this and press tab}
 
     """
 
@@ -168,7 +168,7 @@
     _        = require "underscore"
     Backbone = require "backbone"
 
-    module.exports = model{1: # delete this and press tab}
+    module.exports = model${1: # delete this and press tab}
 
     """
 
