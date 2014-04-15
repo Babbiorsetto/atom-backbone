@@ -30,12 +30,22 @@ All template helpers works in HTML scope. They all have "%" prefix.
   - `%each`: Genearates `_.each` loop in template syntax
   - `%template`: Generates script template tag
 
-## AMD/Require Helpers
+## AMD Helpers
 
-`def` prefix generates Require.js AMD wrapper. It puts the keyword to the body and
-you should push `tab` after body.
+`def` prefix generates AMD wrapper. It puts the keyword to the body and
+you should push `tab` key after body.
 
   - `defmodel`: Generates AMD for model class
   - `defview`: Generates AMD for view class
   - `defcollection`: Generates AMD for collection class
   - `defrouter`: Generates AMD for router class
+
+## CommonJS Helpers
+
+`exp` prefix generates CommonJS wrapper. It puts the keyword to the body and
+you should push `tab` key after body.
+
+  - `expmodel`: Generates CommonJS module for model class
+  - `expview`: Generates CommonJS module for view class
+  - `expcollection`: Generates CommonJS module for collection class
+  - `exprouter`: Generates CommonJS module for router class
