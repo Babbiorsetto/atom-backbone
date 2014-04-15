@@ -181,7 +181,7 @@
       ${1:'dep'}
     ], (_, Backbone${2:, dep}) ->
 
-      collection${1: # delete this and press tab}
+      collection${3: # delete this and press tab}
 
     """
 

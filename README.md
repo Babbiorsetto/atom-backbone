@@ -4,6 +4,11 @@
 
 Atom Backbone provides Backbone shortcuts for CoffeeScript, JavaScript and HTML
 
+## Autocompletion Support
+
+Backbone plugin have autocompletion support all of the *Backbone* methods and classes.
+It also includes *Underscore or Lo-dash* autocompletion.
+
 ## Base Snippet Activators
 
   - `model`: Creates model snippet
