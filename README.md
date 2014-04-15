@@ -1,8 +1,16 @@
 # Atom Backbone.js Package
 
-![Atom Backbone](https://dl.dropboxusercontent.com/u/20947008/webbox/atom/atom-backbone.gif)
-
 Atom Backbone provides Backbone shortcuts for CoffeeScript, JavaScript and HTML
+
+Key features:
+
+  - HTML micro-template language, autocompletion and snippets
+  - Backbone.LayoutManager autocompletion and snippets
+  - CoffeeScript and JavaScript support (Coming Soon: TypeScript)
+  - Programmatic Helpers and Common Patterns snippets
+  - AMD and CommonJS wrapper snippets
+
+![Atom Backbone](https://dl.dropboxusercontent.com/u/20947008/webbox/atom/atom-backbone.gif)
 
 ## Autocompletion Support
 
@@ -17,7 +25,7 @@ It also includes *Underscore or Lo-dash* autocompletion.
   - `router`: Creates router snippet
   - `layout`: Creates Backbone LayoutManager's layout
 
-## Programmatic Helpers
+## Programmatic Helpers, Patterns
 
   - `modelview`: Creates model view helper snippet
   - `collectionview`: Creates collection view helper snippet
