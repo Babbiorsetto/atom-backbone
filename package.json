@@ -1,0 +1,12 @@
+{
+  "name": "Atom Backbone.js Snippets",
+  "version": "0.0.1",
+  "description": "Atom Backbone provides Backbone shortcuts for CoffeeScript, JavaScript and HTML",
+  "repository": "https://github.com/webBoxio/atom-backbone",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
