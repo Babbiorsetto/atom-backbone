@@ -15,6 +15,7 @@ It also includes *Underscore or Lo-dash* autocompletion.
   - `view`: Creates view snippet
   - `collection`: Creates collection snippet
   - `router`: Creates router snippet
+  - `layout`: Creates Backbone LayoutManager's layout
 
 ## Programmatic Helpers
 
@@ -23,6 +24,7 @@ It also includes *Underscore or Lo-dash* autocompletion.
   - `super`: Creates super method caller
   - `template`: Creates `_.template` snippet
   - `history`: Generates `Bacbone.Histroy.start` function
+  - `layoutconfig`: Generates Backbone LayoutManager configuration scope
 
 ## Template Helpers
 
@@ -46,13 +48,15 @@ you should push `tab` key after body.
   - `defview`: Generates AMD for view class
   - `defcollection`: Generates AMD for collection class
   - `defrouter`: Generates AMD for router class
+  - `deflayout`: Generates AMD for layout class
 
 ## CommonJS Helpers
 
-`exp` prefix generates CommonJS wrapper. It puts the keyword to the body and
+`exp` prefix generates CommonJS wrapper (you can remember with "export"). It puts the keyword to the body and
 you should push `tab` key after body.
 
   - `expmodel`: Generates CommonJS module for model class
   - `expview`: Generates CommonJS module for view class
   - `expcollection`: Generates CommonJS module for collection class
   - `exprouter`: Generates CommonJS module for router class
+  - `explayout`: Generates CommonJS module for layout class
