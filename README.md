@@ -1,5 +1,7 @@
 # Atom Backbone.js Package
 
+![Atom Backbone](https://dl.dropboxusercontent.com/u/20947008/webbox/atom/atom-backbone.gif)
+
 Atom Backbone provides Backbone shortcuts for CoffeeScript, JavaScript and HTML
 
 ## Base Snippet Activators
