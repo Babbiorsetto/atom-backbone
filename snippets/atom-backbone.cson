@@ -122,6 +122,62 @@
 
     """
 
+  "Backbone View for AMD":
+    "prefix": "defview"
+    "body": """
+    define [
+      'jquery'
+      'underscore'
+      'backbone'
+
+      'text!templates/${1:template_path.html}'
+    ], ($, _, Backbone, ${2:template}) ->
+
+      view${3}
+
+    """
+
+  "Backbone Model for AMD":
+    "prefix": "defmodel"
+    "body": """
+    define [
+      'underscore'
+      'backbone'
+      ${1:'dep'}
+    ], (_, Backbone${2:, dep}) ->
+
+      model${3}
+
+    """
+
+  "Backbone Collection for AMD":
+    "prefix": "defcollection"
+    "body": """
+    define [
+      'underscore'
+      'backbone'
+      ${1:'dep'}
+    ], (_, Backbone${2:, dep}) ->
+
+      collection${1}
+
+    """
+
+  "Backbone Router for AMD":
+    "prefix": "defrouter"
+    "body": """
+    define [
+      'jquery'
+      'underscore'
+      'backbone'
+      ${1:'dep'}
+    ], ($, _, Backbone${2:, dep}) ->
+
+      router${1}
+
+    """
+
+
 # JavaScript Snippets
 
 ".source.js":
@@ -266,6 +322,66 @@
     });
     """
 
+  "Backbone View for AMD":
+    "prefix": "defview"
+    "body": """
+    define([
+      'jquery',
+      'underscore',
+      'backbone',
+
+      'text!templates/${1:template_path.html}'
+    ], function ($, _, Backbone, ${2:template}) {
+
+      view${3}
+
+    });
+    """
+
+  "Backbone Model for AMD":
+    "prefix": "defmodel"
+    "body": """
+    define([
+      'underscore',
+      'backbone',
+      ${1:'dep'}
+    ], function (_, Backbone${2:, dep}) {
+
+      model${3}
+
+    });
+    """
+
+  "Backbone Collection for AMD":
+    "prefix": "defcollection"
+    "body": """
+    define([
+      'underscore',
+      'backbone',
+      ${1:'dep'}
+    ], function (_, Backbone${2:, dep}) {
+
+      collection${1}
+
+    });
+    """
+
+  "Backbone Router for AMD":
+    "prefix": "defrouter"
+    "body": """
+    define([
+      'jquery'
+      'underscore'
+      'backbone'
+      ${1:'dep'}
+    ], function ($, _, Backbone${2:, dep}) {
+
+      router${1}
+
+    });
+    """
+
+
 # Template Helpers
 
 ".text.html":
@@ -283,16 +399,6 @@
     "body": """
     <% if (${1}) { %>
       ${2}
-    <% } // endif %>
-    """
-
-  "Template: else":
-    "prefix": "%ifels"
-    "body": """
-    <% if (${1}) { %>
-      ${2}
-    <% } else { %>
-      ${3}
     <% } // endif %>
     """
 
