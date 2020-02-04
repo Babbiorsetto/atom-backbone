@@ -208,7 +208,7 @@
     });
     """
 
-  "JavaScript: Backbone Model for CommonJS":
+  "JavaScript: Backbone Collection for CommonJS":
     "prefix": "expcollection"
     "body": """
     var _        = require("underscore");
